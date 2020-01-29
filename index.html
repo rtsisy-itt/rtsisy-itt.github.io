@@ -1,0 +1,69 @@
+<html>
+<head>
+    <style>
+body{
+
+}
+input{
+
+width: 300px;
+padding:10px;
+
+}
+div#content{
+padding:20px;
+
+}
+
+
+
+
+    </style>
+    <script type="text/javascript">
+    function loadAds() {
+        InterfaceName.loadAds();
+    }
+    function playVideo() {
+        InterfaceName.playVideo();
+    }
+    function pauseVideo() {
+        InterfaceName.pauseVideo();
+    }
+
+    function getInfo() {
+        InterfaceName.getInfo();
+    }
+    function seekTo() {
+        InterfaceName.seekTo();
+    }
+
+
+
+
+
+    </script>
+</head>
+<body>
+<center>
+    <h3>Imitation of IMA request bind to Android</h3>
+
+    <div>
+        <input type="button" value="Load Ads from API" onClick="loadAds()"/><br/>
+
+        <input type="button" value="Play Video from API" onClick="playVideo()"/><br/>
+
+        <input type="button" value="Pause Video from API" onClick="pauseVideo()"/><br/>
+
+        <input type="button" value="Get player info from API" onClick="getInfo()"/><br/>
+
+        <input type="button" value="Seek into 12 sec from API" onClick="seekTo()"/><br/>
+
+        <!--        <input type="button" value="ad_pause from API" onClick="ad_pause()"/><br/><br/>-->
+
+        <!--        <input type="button" value="ad_terminate_android from API" onClick="ad_terminate_android()"/><br/><br/>-->
+
+        <!--        <input type="button" value="ad_setVolume from API" onClick="ad_setVolume()"/><br/><br/>-->
+    </div>
+</center>
+</body>
+</html>
