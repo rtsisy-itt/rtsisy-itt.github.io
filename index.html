@@ -22,6 +22,11 @@ padding:20px;
     <script type="text/javascript">
         
         
+            
+
+        function ad_start() {
+        InterfaceName.ad_start();
+    }
     function loadVast() {
         InterfaceName.loadVast();
     }
@@ -53,24 +58,15 @@ padding:20px;
     <h3>Imitation of IMA request bind to Android</h3>
 
     <div>
-        
-        <input type="button" value="Open_TVN_WAST" onClick="loadVast()"/><br/><br/>
+
 
         <input type="button" value="Load Ads from API" onClick="loadAds()"/><br/>
-
         <input type="button" value="Play Video from API" onClick="playVideo()"/><br/>
-
         <input type="button" value="Pause Video from API" onClick="pauseVideo()"/><br/>
-
         <input type="button" value="Get player info from API" onClick="getInfo()"/><br/>
-
         <input type="button" value="Seek into 12 sec from API" onClick="seekTo()"/><br/>
-
-        <!--        <input type="button" value="ad_pause from API" onClick="ad_pause()"/><br/><br/>-->
-
-        <!--        <input type="button" value="ad_terminate_android from API" onClick="ad_terminate_android()"/><br/><br/>-->
-
-        <!--        <input type="button" value="ad_setVolume from API" onClick="ad_setVolume()"/><br/><br/>-->
+        <input type="button" value="Load and Play Vast" onClick="loadVast()"/><br/><br/>
+        <input type="button" value="Play Vast" onClick="ad_start()"/><br/><br/>
     </div>
 </center>
 </body>
