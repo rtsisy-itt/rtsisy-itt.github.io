@@ -20,6 +20,11 @@ padding:20px;
 
     </style>
     <script type="text/javascript">
+        
+        
+    function loadVast() {
+        InterfaceName.loadVast();
+    }
     function loadAds() {
         InterfaceName.loadAds();
     }
@@ -48,6 +53,9 @@ padding:20px;
     <h3>Imitation of IMA request bind to Android</h3>
 
     <div>
+        
+        <input type="button" value="Open_TVN_WAST" onClick="loadVast()"/><br/><br/>
+
         <input type="button" value="Load Ads from API" onClick="loadAds()"/><br/>
 
         <input type="button" value="Play Video from API" onClick="playVideo()"/><br/>
