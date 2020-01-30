@@ -42,25 +42,20 @@ padding:20px;
         
    
     function test() {
-        
-        const sleep = (milliseconds) => {
-            return new Promise(resolve => setTimeout(resolve, milliseconds))
-}
-
+      
         InterfaceName.playRequest();
         InterfaceName.showToast("playRequest");
-        sleep(3000);        
+        setTimeout(5000);         
         InterfaceName.pauseRequest(); 
         InterfaceName.showToast("pauseRequest");
-        sleep(3000);
+        setTimeout(5000);         
         InterfaceName.seekTo(50000)
         InterfaceName.showToast("seekTo");
-
-        sleep(3000);        
+        setTimeout(5000);         
         InterfaceName.playRequest();
-        sleep(3000); 
+        setTimeout(5000);         
         InterfaceName.getInfo()                 
-        sleep(3000);
+        setTimeout(5000);         
         InterfaceName.duration()                    
         setTimeout(5000);         
         InterfaceName.currentTime()                
