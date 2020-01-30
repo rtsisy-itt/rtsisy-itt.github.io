@@ -42,19 +42,21 @@ padding:20px;
         
    
     function test() {
-        InterfaceName.playVideo();
+        InterfaceName.playRequest();
         setTimeout(5000);
         InterfaceName.pauseVideo();
         setTimeout(5000);
-        InterfaceName.pauseVideo();
+        InterfaceName.pauseRequest();
         setTimeout(5000);
-        InterfaceName.seekTo(50000)             
-        setTimeout(30000);
+        InterfaceName.seekTo(13000)             
+        setTimeout(5000);
         InterfaceName.getInfo()                 
         setTimeout(5000);         
-        InterfaceName.currentTime()                 
+        InterfaceName.duration()                    
         setTimeout(5000);         
-        InterfaceName.currentTime()      
+        InterfaceName.currentTime()                
+        setTimeout(5000);         
+        InterfaceName.state()      
         setTimeout(5000);         
         InterfaceName.width()                  
         setTimeout(5000);         
