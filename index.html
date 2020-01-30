@@ -43,10 +43,14 @@ padding:20px;
    
     function test() {
         InterfaceName.playRequest();
+        InterfaceName.showToast("playRequest");
         sleep(3000);        
-        InterfaceName.pauseRequest();
+        InterfaceName.pauseRequest(); 
+        InterfaceName.showToast("pauseRequest");
         sleep(3000);
-        InterfaceName.seekTo(13000)             
+        InterfaceName.seekTo(50000)
+        InterfaceName.showToast("seekTo");
+
         sleep(3000);        
         InterfaceName.playRequest();
         sleep(3000); 
