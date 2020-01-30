@@ -43,13 +43,15 @@ padding:20px;
    
     function test() {
         InterfaceName.playRequest();
-        setTimeout(5000);
+        sleep(3000);        
         InterfaceName.pauseRequest();
-        setTimeout(5000);
+        sleep(3000);
         InterfaceName.seekTo(13000)             
-        setTimeout(5000);
+        sleep(3000);        
+        InterfaceName.playRequest();
+        sleep(3000); 
         InterfaceName.getInfo()                 
-        setTimeout(5000);         
+        sleep(3000);
         InterfaceName.duration()                    
         setTimeout(5000);         
         InterfaceName.currentTime()                
