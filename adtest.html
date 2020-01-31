@@ -16,8 +16,8 @@ padding:20px;
     </style>
     <script type="text/javascript">
         
-    function adStart() {
-        InterfaceName.adStart();
+    function adPlay() {
+        InterfaceName.adPlay();
     }
     function adPause() {
         InterfaceName.adPause();
@@ -29,13 +29,20 @@ padding:20px;
 
    
     function testAll()
-        InterfaceName.adStart();
+        InterfaceName.adPlay();
+        
         InterfaceName.adPause();
+        
         InterfaceName.adResume(); 
+        
         InterfaceName.ad_setVolume();
+        
         InterfaceName.adapter_player_currentTimeChanged(5000)
+        
         InterfaceName.ad_getDuration(3);
-        InterfaceName.ad_getCurrentTimee();                
+        
+        InterfaceName.ad_getCurrentTimee();            
+        
         InterfaceName.ad_getState()                    
         InterfaceName.currentTime()                
         InterfaceName.state()      
@@ -62,7 +69,7 @@ padding:20px;
     <h3>Imitation of IMA request bind to Android</h3>
 
     <div>
-        <input type="button" value="Play Ads" onClick="adStart()"/><br/><br/>
+        <input type="button" value="Play Ads" onClick="adPlay()"/><br/><br/>
 
         <input type="button" value="Pause Ads" onClick="adPause()"/><br/><br/>
 
