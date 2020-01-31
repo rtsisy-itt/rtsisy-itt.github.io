@@ -16,11 +16,11 @@ padding:20px;
     </style>
     <script type="text/javascript">
         
-    function adPlay() {
-        InterfaceName.adPlay();
+    function ad_start() {
+        InterfaceName.ad_start();
     }
-    function adPause() {
-        InterfaceName.adPause();
+    function ad_pause() {
+        InterfaceName.ad_pause();
     }
     function testAll() {
         InterfaceName.testAll();
@@ -30,8 +30,8 @@ padding:20px;
  
    
     function testAll()
-        InterfaceName.adPlay();
-        InterfaceName.adPause();
+        InterfaceName.ad_start();
+        InterfaceName.ad_pause();
         InterfaceName.ad_resume(); 
         InterfaceName.ad_setVolume();
         InterfaceName.adapter_player_currentTimeChanged(5000)
@@ -65,7 +65,7 @@ padding:20px;
     <div>
         <input type="button" value="Play Ads" onClick="adPlay()"/><br/><br/>
 
-        <input type="button" value="Pause Ads" onClick="adPause()"/><br/><br/>
+        <input type="button" value="Pause Ads" onClick="ad_pause()"/><br/><br/>
 
         <input type="button" value="Big test if API" onClick="testAll()"/><br/><br/>
         
