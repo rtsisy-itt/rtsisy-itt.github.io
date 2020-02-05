@@ -22,20 +22,20 @@ padding:20px;
     <script type="text/javascript">
         
     function loadAds() {
-        window.Android.loadAds();
+        window.Android.loadAds().postMessage({});
     }
     function playVideo() {
-        Android.playVideo();
+        Android.playVideo().postMessage({});
     }
     function pauseVideo() {
-        window.Android.pauseVideo();
+        window.Android.pauseVideo().postMessage({});
     }
 
     function getInfo() {
-        window.Android.getInfo();
+        window.Android.getInfo().postMessage({});
     }
     function seekTo() {
-        window.Android.seekTo();
+        window.Android.seekTo().postMessage({});
     }
         
         
