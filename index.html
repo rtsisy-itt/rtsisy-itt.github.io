@@ -24,18 +24,18 @@ padding:20px;
     function loadAds() {
         InterfaceName.loadAds();
     }
-    function playVideo() {
-        InterfaceName.playVideo();
+    function play() {
+        InterfaceName.play();
     }
     function pauseVideo() {
         InterfaceName.pauseVideo();
     }
 
-    function getInfo() {
-        InterfaceName.getInfo().postMessage({});
+    function volume() {
+        window.InterfaceName.volume({})
     }
     function seekTo() {
-        InterfaceName.seekTo().postMessage({});
+        window.InterfaceName.seekTo(10000).postMessage({});
     }
         
         
@@ -86,9 +86,9 @@ padding:20px;
 
     <div>
         <input type="button" value="Go to ads from JS" onClick="loadAds()"/><br/><br/>
-        <input type="button" value="Play Video from JS" onClick="playVideo()"/><br/><br/>
-        <input type="button" value="Pause Video from JS" onClick="pauseVideo()"/><br/><br/>
-        <input type="button" value="Get player info from JS" onClick="getInfo()"/><br/><br/>
+        <input type="button" value="Play Video from JS" onClick="play()"/><br/><br/>
+        <input type="button" value="Pause Video from JS" onClick="pause()"/><br/><br/>
+        <input type="button" value="Get volume from JS" onClick="volume()"/><br/><br/>
         <input type="button" value="Seek for 10 sec from JS" onClick="seekTo()"/><br/><br/>
                 <input type="button" value="Test JS" onClick="test()"/><br/><br/>
 
