@@ -31,11 +31,11 @@ padding:20px;
         InterfaceName.pause();
     }
 
-    function volume() {
-        window.InterfaceName.volume({})
+    function state() {
+        InterfaceName.state();
     }
     function seekTo() {
-        window.InterfaceName.seekTo(10000).postMessage({});
+        InterfaceName.seekTo(10000);
     }
         
         
