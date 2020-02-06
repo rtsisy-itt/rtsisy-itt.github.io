@@ -42,6 +42,7 @@ padding:20px;
 <body>
 <center>
     <h3>Imitation of IMA request bind to Android</h3>
+        <h4>https://github.com/rtsisy-itt/rtsisy-itt.github.io<h4/>
 
     <div>
         <input type="button" value="Play Ads" onClick="ad_start()"/><br/><br/>
